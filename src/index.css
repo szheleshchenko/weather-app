@@ -1,0 +1,102 @@
+@font-face {
+  font-family: "Lato";
+  src: url("./assets/fonts/Lato-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 400;
+}
+
+:root {
+  --border-radius: 8px;
+  --color-text: #ffffff;
+  --color-background-sun: #498cec;
+  --color-background-rain: #7290b9;
+  --color-select-background: #ffffff;
+  --color-translucent-text: rgba(255, 255, 255, 0.4);
+  --color-translucent-border: rgba(255, 255, 255, 0.4);
+  --color-translucent-background: rgba(255, 255, 255, 0.2);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.weather-app {
+  display: flex;
+  flex-direction: column;
+  place-content: space-between;
+  width: 100%;
+  min-height: 100vh;
+  color: var(--color-text);
+  background-color: var(--color-background-sun);
+}
+
+.weather-app.rain {
+  background-color: var(--color-background-rain);
+}
+
+header {
+  display: flex;
+  place-content: space-between;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+@media (max-width: 550px) {
+  header {
+    padding: 19px 19px 0;
+  }
+
+  header .sub-left-header {
+    position: absolute;
+    width: 100vw;
+  }
+
+  footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: 35px;
+    padding: 0 24px 48px;
+  }
+}
+@media (min-width: 550px) and (max-width: 900px) {
+  * {
+    font-size: 6px;
+  }
+
+  header {
+    padding: 75px 50px 0;
+  }
+
+  header .sub-left-header {
+    position: absolute;
+  }
+
+  footer {
+    display: flex;
+    place-content: space-between;
+    padding: 0 50px 120px;
+  }
+}
+
+@media (min-width: 900px) {
+  header {
+    padding: 75px 100px 0;
+  }
+
+  footer {
+    display: flex;
+    place-content: space-between;
+    padding: 0 100px 120px;
+  }
+}

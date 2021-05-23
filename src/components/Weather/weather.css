@@ -1,0 +1,47 @@
+.weather {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 550px) {
+  .weather {
+    font-size: 120px;
+  }
+
+  .weather img {
+    width: 140px;
+  }
+
+  .weather-description {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 500px) and (max-width: 900px) {
+  .weather {
+    font-size: 150px;
+  }
+
+  .weather img {
+    width: 170px;
+  }
+
+  .weather-description {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 900px) {
+  .weather {
+    font-size: 180px;
+  }
+
+  .weather img {
+    width: 200px;
+  }
+
+  .weather-description {
+    font-size: 25px;
+  }
+}

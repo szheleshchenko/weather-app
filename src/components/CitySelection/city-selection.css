@@ -1,0 +1,134 @@
+.left-header {
+  position: relative;
+  width: 100%;
+}
+
+form {
+  display: flex;
+  place-content: space-between;
+  align-items: center;
+  background-color: var(--color-select-background);
+  border-radius: var(--border-radius);
+}
+
+form input {
+  width: 90%;
+  color: #000000;
+  border: none;
+  outline: none;
+}
+
+form button {
+  font-family: "Lato";
+  color: var(--color-background-sun);
+  background-color: var(--color-select-background);
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.cities-list {
+  position: absolute;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  left: 0;
+  background-color: #ffffff;
+  border-bottom-left-radius: var(--border-radius);
+  border-bottom-right-radius: var(--border-radius);
+}
+
+.cities-list > span {
+  color: #000000;
+  cursor: pointer;
+}
+
+.cities-list > span:hover {
+  background-color: #32323232;
+}
+
+@media (max-width: 550px) {
+  .left-header {
+    height: 53px;
+  }
+
+  form {
+    position: absolute;
+    width: calc(100vw - 36px);
+    height: 53px;
+    padding: 18px;
+  }
+
+  .cities-list {
+    width: 100%;
+    max-height: 115px;
+    top: 40px;
+  }
+
+  .cities-list > span {
+    font-size: 12px;
+    padding: 12px;
+  }
+
+  form input,
+  form button {
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 500px) and (max-width: 900px) {
+  .left-header {
+    height: 97px;
+  }
+
+  form {
+    position: absolute;
+    width: calc(100vw - 38px);
+    height: 97px;
+    padding: 32px;
+  }
+
+  .cities-list {
+    width: 100%;
+    max-height: 126px;
+    top: 85px;
+  }
+
+  .cities-list > span {
+    font-size: 20px;
+    padding: 20px;
+  }
+
+  form input,
+  form button {
+    font-size: 30px;
+  }
+}
+
+@media (min-width: 900px) {
+  .left-header {
+    height: 97px;
+  }
+
+  form {
+    width: 579px;
+    height: 97px;
+    padding: 32px;
+  }
+
+  .cities-list {
+    width: 579px;
+    max-height: 126px;
+    top: 85px;
+  }
+
+  .cities-list > span {
+    font-size: 20px;
+    padding: 20px;
+  }
+
+  form input,
+  form button {
+    font-size: 30px;
+  }
+}

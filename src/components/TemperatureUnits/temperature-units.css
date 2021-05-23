@@ -1,0 +1,62 @@
+.unit {
+  display: flex;
+  overflow: hidden;
+  width: 77px;
+  height: 29px;
+  border: 1px solid var(--color-translucent-border);
+  border-radius: var(--border-radius);
+}
+
+.unit::before {
+  content: "°";
+  position: absolute;
+  font-size: 18px;
+  color: var(--color-translucent-text);
+}
+
+.unit button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  font-size: 18px;
+  font-family: "Lato";
+  color: var(--color-translucent-text);
+  background-color: var(--color-background);
+  outline: none;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.5s, color 0.5s;
+}
+
+.rain .unit button {
+  background-color: #7290b9;
+}
+
+.unit.celsius button:first-child {
+  color: var(--color-text);
+  background-color: var(--color-translucent-background);
+}
+
+.unit.fahrenheit button:last-child {
+  color: var(--color-text);
+  background-color: var(--color-translucent-background);
+}
+
+@media (max-width: 550px) {
+  .unit::before {
+    right: 105px;
+  }
+}
+
+@media (min-width: 550px) and (max-width: 900px) {
+  .unit::before {
+    right: 105px;
+  }
+}
+
+@media (min-width: 900px) {
+  .unit::before {
+    right: 185px;
+  }
+}
