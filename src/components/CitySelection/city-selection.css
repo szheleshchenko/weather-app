@@ -83,7 +83,7 @@ form button {
 
   form {
     position: absolute;
-    width: calc(100vw - 38px);
+    width: calc(100vw - 100px);
     height: 97px;
     padding: 32px;
   }
