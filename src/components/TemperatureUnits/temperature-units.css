@@ -51,7 +51,7 @@
 
 @media (min-width: 550px) and (max-width: 900px) {
   .unit::before {
-    right: 105px;
+    right: 125px;
   }
 }
 
