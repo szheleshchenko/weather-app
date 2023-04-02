@@ -1,1 +1,1 @@
-https://subcomandantemarcos.github.io/weather-app/
+https://szheleshchenko.github.io/weather-app/
