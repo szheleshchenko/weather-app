@@ -2,7 +2,7 @@
   "name": "task-for-ronasit",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://subcomandantemarcos.github.io/weather-app",
+  "homepage": "https://szheleshchenko.github.io/weather-app",
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
